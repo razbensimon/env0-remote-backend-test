@@ -1,0 +1,8 @@
+version: 2
+deploy:
+  steps:
+    terraformInit:
+      before:
+        - name: Echo something
+          run: |
+            echo "I am here!"
