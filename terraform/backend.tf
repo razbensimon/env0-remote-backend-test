@@ -2,11 +2,11 @@ terraform {
   required_version  = ">= 1.3.4"
 
   backend "remote" {
-    hostname = "backend.api.env0.com"
-    organization = "1ffc3f01-9501-4577-87e7-6ea8e5b4d74b.bac0dd9a-23e7-4d17-a726-4931ef301eac"
+    hostname = "backend-dev.api.dev.env0.com"
+    organization = "bd12a04a-b051-4f51-9a8a-8a32ac198802.1e08fbe7-3259-43e6-93e8-25c9e0cfa963"
 
     workspaces {
-      name = "my-backend-env-1"
+      name = "remote-plan-qa-raz-1"
     }
   }
 }
